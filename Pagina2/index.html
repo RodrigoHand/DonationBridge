@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar bg-1 fg-2">
-        <div class="container-fluid">
+        <div class="container-fluid gap-6">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
@@ -21,10 +21,14 @@
                     </li>
                 </ol>
             </nav>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn-outline theme-success" type="submit">Search</button>
-            </form>
+            <div class="form-field flex-grow-1">
+                <div class="d-flex align-items-center gap-3 p-3 border rounded-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" aria-hidden="true" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                    <input type="search" class="form-ghost" id="exampleGhostInput" placeholder="Search" aria-label="Search">
+                </div>
+            </div>
             <span class="avatar">
                 <img class="avatar-img" src="imagens/pngtree-person-profile-icon-in-a-circle-vector-png-image_16457993.png" alt="mdo">
             </span>
@@ -33,7 +37,7 @@
 
     <div class="card">
         <div class="card-body">
-            <img src="imagens/Frame.png" class="card-img" alt="frame">
+            <img src="imagens/Frame.png" class="card-img sm:object-fit-contain border rounded" alt="frame">
             <h2 class="mt-2 mb-0">Persona</h2>
             <p class="card-text fg-2"><strong>120</strong><br>Doações Recebidas</p>
             <p class="card-text fg-2"><strong>Região:</strong><br>Vila Velha, Itaparica</p>
@@ -42,7 +46,7 @@
 
     <div class="Box">
         <section class="card" style="max-width: 320px">
-            <img src="imagens/Frame.png" class="card-img-top" alt="...">
+            <img src="imagens/Frame.png" class="card-img-top sm:object-fit-contain border rounded" alt="...">
             <div class="card-body">
                 <h4 class="card-title">Doação recebida</h4>
                 <p class="card-subtitle fg-2">2023-10-26</p>
@@ -50,7 +54,7 @@
         </section>
     
         <section class="card" style="max-width: 320px">
-            <img src="imagens/Frame.png" class="card-img-top" alt="Frame">
+            <img src="imagens/Frame.png" class="card-img-top sm:object-fit-contain border rounded" alt="Frame">
             <div class="card-body">
                 <h4 class="card-title">Doação recebida</h4>
                 <p class="card-subtitle fg-2">2023-10-26</p>
@@ -58,12 +62,18 @@
         </section>
 
         <section class="card" style="max-width: 320px">
-            <img src="imagens/Frame.png" class="card-img-top" alt="Frame">
+            <img src="imagens/Frame.png" class="card-img-top sm:object-fit-contain border rounded" alt="Frame">
             <div class="card-body">
                 <h4 class="card-title">Doação recebida</h4>
                 <p class="card-subtitle fg-2">2023-10-26</p>
             </div>
         </section>
     </div>
+
+    <section class="card" style="max-width: 320px">
+        <p class="card-header">Doações necessárias</p>
+        <div class="card-body">
+        </div>
+    </section>
 </body>
 </html>
