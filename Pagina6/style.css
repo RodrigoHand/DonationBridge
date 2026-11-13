@@ -1,24 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-h1 {
-    font-size:80px;
-text-align:left;
-padding: 80px;
-color: #222222;
-}
-body {
-    background-color: #F7E8EF;
-}
-a {
-    font-size:33px;
-    color: #222222;
-}
-a:link {
-    text-decoration: none;
-}
-a:hover {
-    color:#CA1F6C;
-}
-hr {
-    color:#354F42;
-    size: 5px;
-}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body.historico-pagina{min-height:100vh;background:#efd8e3;color:#000;font-family:Arial,Helvetica,sans-serif}
+.historico-navbar{background:#e8f0e8;min-height:40px;display:grid;grid-template-columns:1fr 230px 1fr;align-items:center;gap:14px;padding:5px 17px}
+.historico-navegacao{display:flex;gap:4px;align-items:center;white-space:nowrap;font-size:11px}
+.historico-navegacao a{color:inherit;text-decoration:none}
+.historico-navegacao a:hover{text-decoration:underline}
+.historico-pesquisa{background:white;border-radius:30px;height:21px;display:flex;align-items:center;gap:6px;padding:2px 8px}
+.historico-pesquisa svg{flex:none}
+.historico-pesquisa input{border:0;outline:0;background:transparent;width:100%;min-width:0;font:11px Arial,Helvetica,sans-serif}
+.historico-pesquisa input::placeholder{color:#333;opacity:1}
+.historico-perfil{justify-self:end;display:flex;color:#000}
+.historico-conteudo{padding-top:29px}
+.historico-conteudo h1{font-size:36px;font-weight:400;margin:0 14px 27px;line-height:1.15}
+.historico-lista{border-top:1px solid #333}
+.historico-item{min-height:45px;padding:9px 17px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #333;font-size:15px}
+.historico-info{display:flex;align-items:center;gap:20px;min-width:0}
+.historico-info svg{width:18px;height:20px;fill:currentColor;flex-shrink:0}
+.historico-produto{text-align:right}
+.historico-vazio{text-align:center;padding:22px;font-size:14px}
+.historico-item[hidden],.historico-vazio[hidden]{display:none!important}
+@media(max-width:600px){.historico-navbar{grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:10px 12px}.historico-pesquisa{grid-column:1/-1;grid-row:2;width:100%;height:32px}.historico-pesquisa input{font-size:13px}.historico-conteudo{padding-top:25px}.historico-conteudo h1{font-size:clamp(24px,6vw,32px);margin:0 12px 24px}.historico-item{padding:12px;font-size:13px}.historico-info{gap:10px}.historico-produto{max-width:45%;overflow-wrap:anywhere}}
+@media(max-width:350px){.historico-navegacao{font-size:10px}.historico-item{font-size:12px}}
